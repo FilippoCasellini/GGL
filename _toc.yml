@@ -1,5 +1,5 @@
 format: jb-book
 root: index
 chapters:
-  - file: Glaciers and ice sheets as climate archives - Ice-sheet stratigraphy
-  - file: Climate proxies in Ice Cores
+  - file: ice-stratigraphy_exercise.ipynb
+  - file: climate_proxies.ipynb
