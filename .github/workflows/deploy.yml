@@ -3,7 +3,7 @@ name: deploy-book
 on:
   push:
     branches:
-      - GGL  # Assicurati che questo sia il nome del tuo branch principale (potrebbe essere 'master')
+      - main  # Assicurati che questo sia il nome del tuo branch principale (potrebbe essere 'master')
 
 jobs:
   deploy-book:
