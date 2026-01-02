@@ -20,3 +20,19 @@ jobs:
         with:
           name: pdf-book
           path: _build/html/
+      
+      - name: Build the book (HTML format)
+        run: |
+          jupyter-book build . --builder html
+      
+      - name: Upload website artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: jupyter-book-website
+          path: _build/html/
+
+      # Nuovo step opzionale per creare il PDF usando il browser
+      - name: Generate PDF from HTML (Requires Node.js for browser automation)
+        # Questo richiede un setup più complesso di quanto pensassimo inizialmente
+        run: echo "Per ora saltiamo il PDF automatico e scarichiamo l'HTML e lo stampiamo come PDF manualmente"
+
