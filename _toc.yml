@@ -1,5 +1,1 @@
-format: jb-book
-root: index
-chapters:
-  - file: ice-stratigraphy_exercise.ipynb
-  - file: climate_proxies.ipynb
+
